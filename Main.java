@@ -15,17 +15,17 @@ class Main {
     int e=0;
     int hum;
     System.out.println("********************");
-    System.out.println("Escreva seu nome: ");
+    System.out.println("Escreva seu nome: "); // White you name
     System.out.println("********************");
-    String Nm = kb.nextLine();
-    do{
+    String Nm = kb.nextLine(); // input
+    do{ // Do-while case
 
     System.out.print("************************\n");
     System.out.print("  Escolha uma opção    *\n");
-    System.out.print("  0. Para sair         *\n");
-    System.out.print("  1 para pedra         *\n");
-    System.out.print("  2 para papel         *\n");
-    System.out.print("  3 para tesoura       *\n");
+    System.out.print("  0. Para sair         *\n"); // Exit
+    System.out.print("  1 para pedra         *\n"); // Rock
+    System.out.print("  2 para papel         *\n"); // Paper
+    System.out.print("  3 para tesoura       *\n"); // Scissor
     System.out.print("************************\n");
     System.out.print("  Placar       Placar  *\n");
     System.out.print("  "+Nm+"         PC    *\n");
@@ -34,10 +34,10 @@ class Main {
     System.out.print("  Empates:             *\n");
     System.out.print("  "+e+"                    *\n");
     System.out.print("************************\n");
-    hum = kb.nextInt();
-    int maq = n.nextInt(4-1) + 1;
+    hum = kb.nextInt(); // Human Input
+    int maq = n.nextInt(4-1) + 1; //Random choice by the computer
     System.out.println(maq);
-      if(hum==1 && maq==2){
+      if(hum==1 && maq==2){ // Preferred else-if but for-case would work as well
         c = c + 1;
       }
       else if(hum==2 && maq==3){
